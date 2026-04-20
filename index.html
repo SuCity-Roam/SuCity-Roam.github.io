@@ -3,245 +3,739 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suzhou Garden Odyssey</title>
+    <title>SuCity-Roam</title>
     <meta
         name="description"
-        content="Suzhou Garden Odyssey is an AI-assisted guide for exploring Pingjiang Road and nearby attractions in the historic heart of Suzhou."
+        content="SuCity-Roam process portfolio documenting motivation, user requirements, ideation, technical implementation, evaluation, and AI reflection."
     >
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="hero" id="top">
         <nav class="site-nav">
-            <a class="brand" href="#top">Suzhou Garden Odyssey</a>
+            <a class="brand" href="#top">SuCity-Roam</a>
             <div class="nav-links">
-                <a href="#overview">Overview</a>
-                <a href="#team">Team</a>
-                <a href="#personas">Personas</a>
-                <a href="#ai-use">AI Use</a>
+                <a href="#motivation">Motivation</a>
+                <a href="#requirements">Requirements</a>
+                <a href="#ideation">Ideation</a>
+                <a href="#implementation">Implementation</a>
+                <a href="#evaluation">Evaluation</a>
             </div>
         </nav>
 
-        <div class="hero-content">
-            <p class="eyebrow">CPT208 Group Project</p>
-            <h1>Suzhou Garden Odyssey</h1>
-            <p class="hero-subtitle">
-                An AI-assisted guide for Pingjiang Road and nearby attractions,
-                designed to help visitors discover routes, local stories, food spots,
-                and cultural highlights in the historic heart of Suzhou.
-            </p>
-            <a class="hero-button" href="#team">View Our Team</a>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <p class="eyebrow">CPT208 Process Portfolio</p>
+                <h1>SuCity-Roam</h1>
+                <p class="hero-subtitle">
+                    <strong>SuCity-Roam</strong> is a human-centered PWA for cultural tourism in
+                    Suzhou. It combines AI guidance, deep cultural reading, route planning,
+                    panoramic exploration, and social travel support to help visitors move from
+                    simple sightseeing to immersive understanding and participation.
+                </p>
+                <div class="hero-actions">
+                    <a class="hero-button" href="#motivation">Explore Portfolio</a>
+                    <a class="hero-link" href="#team">Meet the Team</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section class="section" id="overview">
+    <main class="portfolio-main">
+        <section class="section" id="motivation">
             <div class="section-heading">
-                <p class="section-kicker">Project Concept</p>
-                <h2>What We Want to Build</h2>
-            </div>
-            <div class="overview-grid">
-                <article class="info-card">
-                    <h3>The Problem</h3>
-                    <p>
-                        Visitors around Pingjiang Road often struggle to decide where to go,
-                        what nearby places are worth visiting, and how to plan a route that
-                        fits their time, interests, and travel pace.
-                    </p>
-                </article>
-                <article class="info-card">
-                    <h3>Our Solution</h3>
-                    <p>
-                        We propose a smart guide experience that combines place-based
-                        recommendations, short cultural introductions, and AI-assisted support
-                        to make local exploration easier and more engaging.
-                    </p>
-                </article>
-                <article class="info-card">
-                    <h3>Target Users</h3>
-                    <p>
-                        Our project focuses on first-time visitors, young travelers, and
-                        time-limited tourists who want a smoother way to explore Suzhou's
-                        historic district.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <section class="section team-section" id="team">
-            <div class="section-heading">
-                <p class="section-kicker">Group Members</p>
-                <h2>Our Team</h2>
+                <p class="section-kicker">01 / Required Section</p>
+                <h2>Motivation &amp; Research</h2>
                 <p class="section-note">
-                    Click each member card to open a full introduction page.
+                    Why this topic matters, what current solutions miss, and who we are
+                    designing for.
                 </p>
             </div>
 
-            <div class="team-grid">
-                <a class="team-card-link" href="member-1.html">
-                    <article class="team-card">
-                        <img class="member-photo" src="images/jinyu-cai.jpg" alt="Jinyu Cai">
-                        <h3>Jinyu Cai</h3>
-                        <p class="member-email">Student ID: 2361409</p>
-                        <p class="member-intro">
-                            Interested in AI applications in robotics, emotion analysis, and
-                            computer vision.
-                        </p>
-                    </article>
-                </a>
+            <div class="feature-grid">
+                <article class="panel-card">
+                    <p class="card-tag">The Why</p>
+                    <h3>Why We Chose This Topic</h3>
+                    <p>
+                        The main motivation of this project is to transform exploration of
+                        Suzhou's cultural spots from simple sightseeing into immersive
+                        understanding and participation. We want users to move beyond quick
+                        destination browsing and gain a deeper sense of place through cultural
+                        context, route support, and interactive exploration.
+                    </p>
+                    <p>
+                        The project therefore aims to build a complete tourism platform with
+                        route planning and navigation, cultural context and background,
+                        panoramic roaming, and social travel support. In our intended
+                        experience, the spots in Suzhou are not only visible, but also
+                        explorable, understandable, recordable, and shareable.
+                    </p>
+                </article>
 
-                <a class="team-card-link" href="member-2.html">
-                    <article class="team-card">
-                        <img class="member-photo" src="images/chao-sheng.jpg" alt="Chao Sheng">
-                        <h3>Chao Sheng</h3>
-                        <p class="member-email">Student ID: 2361088</p>
-                        <p class="member-intro">
-                            Interested in games, problem-solving, and taking on new challenges
-                            with a practical and curious mindset.
-                        </p>
-                    </article>
-                </a>
+                <article class="panel-card accent-card">
+                    <p class="card-tag">Project Focus</p>
+                    <h3>Current Direction</h3>
+                    <ul class="plain-list">
+                        <li>Build a PWA focused on cultural tourism in Suzhou with Pingjiang Road as the starting point.</li>
+                        <li>Extend coverage to gardens, museums, intangible cultural heritage sites, and surrounding attractions.</li>
+                        <li>Combine route planning, cultural introductions, panoramic roaming, and immersive browsing.</li>
+                        <li>Support AI guidance, multilingual use, collection building, and social travel functions.</li>
+                        <li>Help users complete trips more efficiently while enjoying a stronger sense of engagement.</li>
+                    </ul>
+                </article>
+            </div>
 
-                <a class="team-card-link" href="member-3.html">
-                    <article class="team-card">
-                        <img class="member-photo" src="images/mingze-sun.jpg" alt="Mingze Sun">
-                        <h3>Mingze Sun</h3>
-                        <p class="member-email">Student ID: 2361188</p>
-                        <p class="member-intro">
-                            Focusing on front-end development, UI design, and Java programming.
-                            Always eager to collaborate, learn new web technologies, and solve
-                            algorithmic challenges!
-                        </p>
-                    </article>
-                </a>
+            <div class="subsection-block">
+                <div class="subsection-head">
+                    <div>
+                        <p class="subsection-kicker">The Gap</p>
+                        <h3>Academic Research and Commercial Product Review</h3>
+                    </div>
+                    <p>
+                        Add 4 academic papers and 4 commercial products here. Each item should
+                        list 3 strengths and 3 missing points.
+                    </p>
+                </div>
 
-                <a class="team-card-link" href="member-4.html">
-                    <article class="team-card">
-                        <img class="member-photo" src="images/zihao-gong.jpg" alt="Zihao Gong">
-                        <h3>Zihao Gong</h3>
-                        <p class="member-email">Student ID: 2360998</p>
-                        <p class="member-intro">
-                            Interested in game development and excited to work with teammates
-                            to create an amazing project together.
+                <div class="research-columns">
+                    <section class="panel-card research-group">
+                        <h4>Academic Papers</h4>
+                        <div class="research-grid">
+                            <article class="placeholder-card">
+                                <h5>Paper 1</h5>
+                                <p class="placeholder-text">Title, author, and source to be added.</p>
+                                <p class="placeholder-mini">3 strengths / 3 gaps</p>
+                            </article>
+                            <article class="placeholder-card">
+                                <h5>Paper 2</h5>
+                                <p class="placeholder-text">Title, author, and source to be added.</p>
+                                <p class="placeholder-mini">3 strengths / 3 gaps</p>
+                            </article>
+                            <article class="placeholder-card">
+                                <h5>Paper 3</h5>
+                                <p class="placeholder-text">Title, author, and source to be added.</p>
+                                <p class="placeholder-mini">3 strengths / 3 gaps</p>
+                            </article>
+                            <article class="placeholder-card">
+                                <h5>Paper 4</h5>
+                                <p class="placeholder-text">Title, author, and source to be added.</p>
+                                <p class="placeholder-mini">3 strengths / 3 gaps</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="panel-card research-group">
+                        <h4>Commercial Products</h4>
+                        <div class="research-grid">
+                            <article class="placeholder-card">
+                                <h5>Product 1</h5>
+                                <p class="placeholder-text">Name, platform, and link to be added.</p>
+                                <p class="placeholder-mini">3 strengths / 3 gaps</p>
+                            </article>
+                            <article class="placeholder-card">
+                                <h5>Product 2</h5>
+                                <p class="placeholder-text">Name, platform, and link to be added.</p>
+                                <p class="placeholder-mini">3 strengths / 3 gaps</p>
+                            </article>
+                            <article class="placeholder-card">
+                                <h5>Product 3</h5>
+                                <p class="placeholder-text">Name, platform, and link to be added.</p>
+                                <p class="placeholder-mini">3 strengths / 3 gaps</p>
+                            </article>
+                            <article class="placeholder-card">
+                                <h5>Product 4</h5>
+                                <p class="placeholder-text">Name, platform, and link to be added.</p>
+                                <p class="placeholder-mini">3 strengths / 3 gaps</p>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="subsection-block" id="personas">
+                <div class="subsection-head">
+                    <div>
+                        <p class="subsection-kicker">The Stakeholders</p>
+                        <h3>Primary Users, Secondary Users, and Personas</h3>
+                    </div>
+                    <p>
+                        The current persona content has been preserved and repositioned here.
+                    </p>
+                </div>
+
+                <div class="mini-grid">
+                    <article class="mini-card">
+                        <p class="card-tag">Primary Users</p>
+                        <h4>Young and first-time leisure visitors</h4>
+                        <p>
+                            Visitors who want a photogenic, local, and well-paced walking route
+                            without spending too much time on planning.
                         </p>
                     </article>
-                </a>
+                    <article class="mini-card">
+                        <p class="card-tag">Secondary Users</p>
+                        <h4>Short-stay and international visitors</h4>
+                        <p>
+                            Visitors with limited time, less familiarity with local apps, or a
+                            need for simpler bilingual guidance.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="persona-grid">
+                    <article class="persona-card">
+                        <div class="persona-header">
+                            <p class="persona-label">Primary Persona</p>
+                            <h3>Zoe Chen</h3>
+                            <p class="persona-meta">21 | University Student | Weekend Visitor</p>
+                        </div>
+                        <div class="persona-block">
+                            <h4>Background</h4>
+                            <p>
+                                Zoe studies in Nanjing and visits Suzhou with two friends during
+                                a weekend trip. She wants an experience that feels local,
+                                photogenic, and easy to navigate without spending too much time
+                                planning.
+                            </p>
+                        </div>
+                        <div class="persona-block">
+                            <h4>Goals</h4>
+                            <ul>
+                                <li>Find iconic spots near Pingjiang Road quickly.</li>
+                                <li>Discover local snacks, teahouses, and scenic photo points.</li>
+                                <li>Follow a walking route that fits a half-day visit.</li>
+                            </ul>
+                        </div>
+                        <div class="persona-block">
+                            <h4>Pain Points</h4>
+                            <ul>
+                                <li>Online recommendations are scattered and repetitive.</li>
+                                <li>She cannot easily judge which places are actually nearby.</li>
+                                <li>She wants short cultural context, not long articles.</li>
+                            </ul>
+                        </div>
+                        <div class="persona-block">
+                            <h4>Needs</h4>
+                            <p>
+                                A mobile-friendly guide with smart route suggestions, short
+                                introductions, and clear recommendations based on time and
+                                interests.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="persona-card secondary-persona">
+                        <div class="persona-header">
+                            <p class="persona-label">Secondary Persona</p>
+                            <h3>Daniel Park</h3>
+                            <p class="persona-meta">34 | International Tourist | Short Stay Visitor</p>
+                        </div>
+                        <div class="persona-block">
+                            <h4>Background</h4>
+                            <p>
+                                Daniel is visiting Suzhou for one day during a business trip. He
+                                is interested in local history and traditional water-town
+                                scenery, but he is unfamiliar with local apps and does not read
+                                Chinese well.
+                            </p>
+                        </div>
+                        <div class="persona-block">
+                            <h4>Goals</h4>
+                            <ul>
+                                <li>Understand what makes Pingjiang Road culturally special.</li>
+                                <li>Plan a short and efficient route to nearby attractions.</li>
+                                <li>Receive guidance in clear, simple English.</li>
+                            </ul>
+                        </div>
+                        <div class="persona-block">
+                            <h4>Pain Points</h4>
+                            <ul>
+                                <li>Many local travel resources are not language-friendly.</li>
+                                <li>He has limited time and cannot afford trial-and-error.</li>
+                                <li>He needs trustable suggestions rather than random reviews.</li>
+                            </ul>
+                        </div>
+                        <div class="persona-block">
+                            <h4>Needs</h4>
+                            <p>
+                                An accessible digital guide that explains places clearly,
+                                supports quick decision-making, and helps him explore with
+                                confidence.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section class="section personas-section" id="personas">
+        <section class="section" id="requirements">
             <div class="section-heading">
-                <p class="section-kicker">10-80-10 Coverage</p>
-                <h2>User Personas</h2>
+                <p class="section-kicker">02 / Required Section</p>
+                <h2>User Requirements</h2>
                 <p class="section-note">
-                    These two personas cover a core visitor group and an important edge case.
+                    Capture user pain points, define playful core features, and show real-world
+                    research evidence.
                 </p>
             </div>
 
-            <div class="persona-grid">
-                <article class="persona-card">
-                    <div class="persona-header">
-                        <p class="persona-label">Primary Persona</p>
-                        <h3>Zoe Chen</h3>
-                        <p class="persona-meta">21 · University Student · Weekend Visitor</p>
+            <div class="two-column-grid">
+                <article class="panel-card">
+                    <p class="card-tag">User Journey Map</p>
+                    <h3>From Uncertainty to Confident Exploration</h3>
+                    <figure class="journey-figure">
+                        <img
+                            class="journey-image"
+                            src="user-journey.png"
+                            alt="User Journey Map showing five stages: Arrive, Open SuCity-Roam, Ask the AI Guide, Compare Options, and Explore and Adjust."
+                        >
+                    </figure>
+                    <p class="placeholder-caption">
+                        Poster-based journey map showing how a first-time visitor uses SuCity
+                        Roam to plan and adjust a Suzhou trip.
+                    </p>
+                </article>
+
+                <article class="panel-card">
+                    <p class="card-tag">Requirements List</p>
+                    <h3>3 Playful Core Features</h3>
+                    <div class="three-column-grid feature-cards">
+                        <article class="placeholder-card">
+                            <h4>Feature 1</h4>
+                            <p class="placeholder-text">
+                                To be added based on the final requirement summary.
+                            </p>
+                        </article>
+                        <article class="placeholder-card">
+                            <h4>Feature 2</h4>
+                            <p class="placeholder-text">
+                                To be added based on the final requirement summary.
+                            </p>
+                        </article>
+                        <article class="placeholder-card">
+                            <h4>Feature 3</h4>
+                            <p class="placeholder-text">
+                                To be added based on the final requirement summary.
+                            </p>
+                        </article>
                     </div>
-                    <div class="persona-block">
-                        <h4>Background</h4>
-                        <p>
-                            Zoe studies in Nanjing and visits Suzhou with two friends during a
-                            weekend trip. She wants an experience that feels local, photogenic,
-                            and easy to navigate without spending too much time planning.
-                        </p>
+                </article>
+            </div>
+
+            <div class="subsection-block">
+                <div class="subsection-head">
+                    <div>
+                        <p class="subsection-kicker">Evidence of Life</p>
+                        <h3>Photos or Short Video Records from Field Research</h3>
                     </div>
-                    <div class="persona-block">
-                        <h4>Goals</h4>
-                        <ul>
-                            <li>Find iconic spots near Pingjiang Road quickly.</li>
-                            <li>Discover local snacks, teahouses, and scenic photo points.</li>
-                            <li>Follow a walking route that fits a half-day visit.</li>
-                        </ul>
+                    <p>
+                        The requirement asks for 5 pieces of evidence. These tiles are ready for
+                        your materials.
+                    </p>
+                </div>
+
+                <div class="evidence-grid">
+                    <div class="placeholder-tile">Evidence 1</div>
+                    <div class="placeholder-tile">Evidence 2</div>
+                    <div class="placeholder-tile">Evidence 3</div>
+                    <div class="placeholder-tile">Evidence 4</div>
+                    <div class="placeholder-tile">Evidence 5</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="ideation">
+            <div class="section-heading">
+                <p class="section-kicker">03 / Required Section</p>
+                <h2>Ideation &amp; Alternatives</h2>
+                <p class="section-note">
+                    Show the divergent thinking process, compare options, and point to your
+                    low-fidelity prototype.
+                </p>
+            </div>
+
+            <div class="subsection-block">
+                <div class="subsection-head">
+                    <div>
+                        <p class="subsection-kicker">Crazy Eights</p>
+                        <h3>Eight Rapid Interface Sketches</h3>
                     </div>
-                    <div class="persona-block">
-                        <h4>Pain Points</h4>
-                        <ul>
-                            <li>Online recommendations are scattered and repetitive.</li>
-                            <li>She cannot easily judge which places are actually nearby.</li>
-                            <li>She wants short cultural context, not long articles.</li>
-                        </ul>
-                    </div>
-                    <div class="persona-block">
-                        <h4>Needs</h4>
-                        <p>
-                            A mobile-friendly guide with smart route suggestions, short
-                            introductions, and clear recommendations based on time and interests.
-                        </p>
+                    <p>
+                        Add the hand-drawn interface photos here to show early exploration.
+                    </p>
+                </div>
+
+                <div class="sketch-grid">
+                    <div class="placeholder-tile">Sketch 1</div>
+                    <div class="placeholder-tile">Sketch 2</div>
+                    <div class="placeholder-tile">Sketch 3</div>
+                    <div class="placeholder-tile">Sketch 4</div>
+                    <div class="placeholder-tile">Sketch 5</div>
+                    <div class="placeholder-tile">Sketch 6</div>
+                    <div class="placeholder-tile">Sketch 7</div>
+                    <div class="placeholder-tile">Sketch 8</div>
+                </div>
+            </div>
+
+            <div class="two-column-grid">
+                <article class="panel-card">
+                    <p class="card-tag">Design Alternatives</p>
+                    <h3>Compare 2 to 3 Possible Solution Directions</h3>
+                    <div class="compare-grid">
+                        <article class="placeholder-card">
+                            <h4>Alternative A</h4>
+                            <p class="placeholder-text">
+                                To be added after the design alternatives are finalized.
+                            </p>
+                        </article>
+                        <article class="placeholder-card">
+                            <h4>Alternative B</h4>
+                            <p class="placeholder-text">
+                                To be added after the design alternatives are finalized.
+                            </p>
+                        </article>
+                        <article class="placeholder-card">
+                            <h4>Alternative C</h4>
+                            <p class="placeholder-text">
+                                To be added after the design alternatives are finalized.
+                            </p>
+                        </article>
                     </div>
                 </article>
 
-                <article class="persona-card secondary-persona">
-                    <div class="persona-header">
-                        <p class="persona-label">Edge Persona</p>
-                        <h3>Daniel Park</h3>
-                        <p class="persona-meta">34 · International Tourist · Short Stay Visitor</p>
+                <article class="panel-card">
+                    <p class="card-tag">Low-Fi Prototype</p>
+                    <h3>Clickable Figma Link</h3>
+                    <div class="prototype-card placeholder-frame">
+                        <span>Figma prototype link goes here</span>
                     </div>
-                    <div class="persona-block">
-                        <h4>Background</h4>
-                        <p>
-                            Daniel is visiting Suzhou for one day during a business trip. He is
-                            interested in local history and traditional water-town scenery, but
-                            he is unfamiliar with local apps and does not read Chinese well.
-                        </p>
-                    </div>
-                    <div class="persona-block">
-                        <h4>Goals</h4>
-                        <ul>
-                            <li>Understand what makes Pingjiang Road culturally special.</li>
-                            <li>Plan a short and efficient route to nearby attractions.</li>
-                            <li>Receive guidance in clear, simple English.</li>
-                        </ul>
-                    </div>
-                    <div class="persona-block">
-                        <h4>Pain Points</h4>
-                        <ul>
-                            <li>Many local travel resources are not language-friendly.</li>
-                            <li>He has limited time and cannot afford trial-and-error.</li>
-                            <li>He needs trustable suggestions rather than random reviews.</li>
-                        </ul>
-                    </div>
-                    <div class="persona-block">
-                        <h4>Needs</h4>
-                        <p>
-                            An accessible digital guide that explains places clearly, supports
-                            quick decision-making, and helps him explore with confidence.
-                        </p>
-                    </div>
+                    <p class="placeholder-caption">
+                        The low-fi prototype should show the shift from static sightseeing pages
+                        to AI-supported, context-aware cultural exploration.
+                    </p>
                 </article>
             </div>
         </section>
 
-        <section class="section ai-section" id="ai-use">
+        <section class="section" id="implementation">
             <div class="section-heading">
-                <p class="section-kicker">Responsible Use</p>
-                <h2>AI Use and Reflection</h2>
+                <p class="section-kicker">04 / Required Section</p>
+                <h2>Technical Implementation</h2>
+                <p class="section-note">
+                    Explain how the system works, where the final prototype lives, and how work
+                    was distributed across the team.
+                </p>
             </div>
-            <div class="ai-card">
-                <p>
-                    This website was built with the assistance of ChatGPT for webpage content,
-                    persona drafting, and front-end code structure. ChatGPT was used only as a
-                    support tool during the design and implementation process.
+
+            <div class="two-column-grid">
+                <article class="panel-card">
+                    <p class="card-tag">System Architecture</p>
+                    <h3>How Data and Features Connect</h3>
+                    <div class="placeholder-frame tall-frame">
+                        <span>Architecture diagram or Mermaid export goes here</span>
+                    </div>
+                    <p class="placeholder-caption">
+                        The current poster suggests an architecture spanning cultural content,
+                        AI guidance, panoramic exploration, route planning, and social travel
+                        coordination.
+                    </p>
+                </article>
+
+                <article class="panel-card">
+                    <p class="card-tag">High-Fi Prototype</p>
+                    <h3>Runnable Web App Link</h3>
+                    <div class="callout-card">
+                        <p class="callout-label">Deployment URL</p>
+                        <p class="placeholder-text">Add your online prototype link here.</p>
+                    </div>
+                    <div class="callout-card">
+                        <p class="callout-label">Current Integrated Direction</p>
+                        <p>
+                            The current concept integrates panoramic touring, optimized interface
+                            transitions, multilingual AI guidance, route assistance, and friend
+                            location-sharing into one travel platform.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="subsection-block">
+                <div class="subsection-head">
+                    <div>
+                        <p class="subsection-kicker">Individual Contributions</p>
+                        <h3>Contribution Table for All 4 Members</h3>
+                    </div>
+                    <p>
+                        Names are filled in. Specific responsibilities can be added when your
+                        final work split is confirmed.
+                    </p>
+                </div>
+
+                <div class="table-wrap">
+                    <table class="portfolio-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Main Responsibility</th>
+                                <th>Deliverables</th>
+                                <th>Evidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><a href="member-1.html">Jinyu Cai</a></th>
+                                <td><span class="blank-inline">To be added</span></td>
+                                <td><span class="blank-inline">To be added</span></td>
+                                <td><span class="blank-inline">To be added</span></td>
+                            </tr>
+                            <tr>
+                                <th><a href="member-2.html">Chao Sheng</a></th>
+                                <td><span class="blank-inline">To be added</span></td>
+                                <td><span class="blank-inline">To be added</span></td>
+                                <td><span class="blank-inline">To be added</span></td>
+                            </tr>
+                            <tr>
+                                <th><a href="member-3.html">Mingze Sun</a></th>
+                                <td><span class="blank-inline">To be added</span></td>
+                                <td><span class="blank-inline">To be added</span></td>
+                                <td><span class="blank-inline">To be added</span></td>
+                            </tr>
+                            <tr>
+                                <th><a href="member-4.html">Zihao Gong</a></th>
+                                <td><span class="blank-inline">To be added</span></td>
+                                <td><span class="blank-inline">To be added</span></td>
+                                <td><span class="blank-inline">To be added</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="subsection-block" id="team">
+                <div class="subsection-head">
+                    <div>
+                        <p class="subsection-kicker">Team Profiles</p>
+                        <h3>Member Pages and Short Introductions</h3>
+                    </div>
+                    <p>
+                        The original team cards are kept so your portfolio still has a clear
+                        entry point to each member page.
+                    </p>
+                </div>
+
+                <div class="team-grid">
+                    <a class="team-card-link" href="member-1.html">
+                        <article class="team-card">
+                            <img class="member-photo" src="images/jinyu-cai.jpg" alt="Jinyu Cai">
+                            <h3>Jinyu Cai</h3>
+                            <p class="member-email">Student ID: 2361409</p>
+                            <p class="member-intro">
+                                Interested in AI applications in robotics, emotion analysis, and
+                                computer vision.
+                            </p>
+                        </article>
+                    </a>
+
+                    <a class="team-card-link" href="member-2.html">
+                        <article class="team-card">
+                            <img class="member-photo" src="images/chao-sheng.jpg" alt="Chao Sheng">
+                            <h3>Chao Sheng</h3>
+                            <p class="member-email">Student ID: 2361088</p>
+                            <p class="member-intro">
+                                Interested in games, problem-solving, and taking on new
+                                challenges with a practical and curious mindset.
+                            </p>
+                        </article>
+                    </a>
+
+                    <a class="team-card-link" href="member-3.html">
+                        <article class="team-card">
+                            <img class="member-photo" src="images/mingze-sun.jpg" alt="Mingze Sun">
+                            <h3>Mingze Sun</h3>
+                            <p class="member-email">Student ID: 2361188</p>
+                            <p class="member-intro">
+                                Focusing on front-end development, UI design, and Java
+                                programming. Eager to collaborate, learn new web technologies,
+                                and solve interface problems.
+                            </p>
+                        </article>
+                    </a>
+
+                    <a class="team-card-link" href="member-4.html">
+                        <article class="team-card">
+                            <img class="member-photo" src="images/zihao-gong.jpg" alt="Zihao Gong">
+                            <h3>Zihao Gong</h3>
+                            <p class="member-email">Student ID: 2360998</p>
+                            <p class="member-intro">
+                                Interested in game development and excited to work with
+                                teammates to create an engaging project together.
+                            </p>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="evaluation">
+            <div class="section-heading">
+                <p class="section-kicker">05 / Required Section</p>
+                <h2>Evaluation &amp; Reflection</h2>
+                <p class="section-note">
+                    Document usability testing, iterative refinement, final reflection, and AI
+                    use compliance.
                 </p>
-                <p>
-                    All key project decisions, including the topic direction, target users,
-                    content selection, and overall design logic, were defined and reviewed by
-                    the team. AI was used as an assistant rather than a replacement for human
-                    judgement.
-                </p>
+            </div>
+
+            <div class="subsection-block">
+                <div class="subsection-head">
+                    <div>
+                        <p class="subsection-kicker">Questionnaire-Driven Iteration</p>
+                        <h3>Key Findings Across Three Design Stages</h3>
+                    </div>
+                    <p>
+                        The poster already summarizes the main iteration logic from V1 to V3.
+                        Detailed participant-by-participant records can still be added later.
+                    </p>
+                </div>
+
+                <div class="three-column-grid testing-grid">
+                    <article class="placeholder-card">
+                        <h4>Phase 1: Basic Concept and Content</h4>
+                        <p class="placeholder-text">
+                            To be added based on the first round of pilot testing and feedback.
+                        </p>
+                    </article>
+                    <article class="placeholder-card">
+                        <h4>Phase 2: Interactive Shift and Experience</h4>
+                        <p class="placeholder-text">
+                            To be added based on the second round of pilot testing and feedback.
+                        </p>
+                    </article>
+                    <article class="placeholder-card">
+                        <h4>Phase 3: Integrated and Immersive Platform</h4>
+                        <p class="placeholder-text">
+                            To be added based on the current integrated version and evaluation notes.
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="two-column-grid">
+                <article class="panel-card">
+                    <p class="card-tag">Iterative Refinement</p>
+                    <h3>Version 3.0 Improvements</h3>
+                    <div class="comparison-grid">
+                        <div class="placeholder-frame">
+                            <span>Before screenshot</span>
+                        </div>
+                        <div class="placeholder-frame">
+                            <span>After screenshot</span>
+                        </div>
+                    </div>
+                    <p class="placeholder-caption">
+                        Suggested comparison focus: static content layout versus the integrated
+                        version with panorama, AI support, and route coordination.
+                    </p>
+                    <ul class="plain-list version-list">
+                        <li>Architectural optimization: introduced deep panoramic tour support, optimized interaction feedback, and improved transitions between interfaces.</li>
+                        <li>Wider functional support: merged multilingual support, LLM-based tour guidance, route planning, and friend position sharing.</li>
+                        <li>Paradigm evolution: moved beyond isolated static content toward a more integrated digital cultural tourism experience.</li>
+                    </ul>
+                </article>
+
+                <article class="panel-card">
+                    <p class="card-tag">Final Reflection</p>
+                    <h3>Social and Ethical Impact</h3>
+                    <p class="placeholder-text">
+                        To be added. This section can later discuss cultural representation,
+                        accessibility, ethics, and the social impact of the final design.
+                    </p>
+                </article>
+            </div>
+
+            <div class="subsection-block" id="ai-use">
+                <div class="subsection-head">
+                    <div>
+                        <p class="subsection-kicker">Technical Reflection</p>
+                        <h3>Required AI Use Disclosure</h3>
+                    </div>
+                    <p>
+                        This section was added to match the coursework requirement about AI
+                        assisted work.
+                    </p>
+                </div>
+
+                <div class="two-column-grid ai-grid">
+                    <article class="panel-card accent-card">
+                        <p class="card-tag">Current AI Use Note</p>
+                        <h3>Existing Disclosure</h3>
+                        <p>
+                            This website was built with the assistance of ChatGPT for webpage
+                            content, persona drafting, and front-end code structure. AI was used
+                            as a support tool during design and implementation rather than a
+                            replacement for human judgement.
+                        </p>
+                    </article>
+
+                    <article class="panel-card">
+                        <p class="card-tag">Prompt Record</p>
+                        <h3>Main Prompts Used for Core Components</h3>
+                        <p class="placeholder-text">
+                            Add the prompts used to generate or refine major interface and code
+                            components.
+                        </p>
+                    </article>
+
+                    <article class="panel-card">
+                        <p class="card-tag">Validation</p>
+                        <h3>How the Team Checked AI Output</h3>
+                        <p class="placeholder-text">
+                            Explain how the team verified that AI generated content and code
+                            matched user requirements and project goals.
+                        </p>
+                    </article>
+
+                    <article class="panel-card">
+                        <p class="card-tag">Ethical Considerations</p>
+                        <h3>Bias, Accessibility, and Responsible Use</h3>
+                        <p class="placeholder-text">
+                            Discuss accessibility, bias, authorship, and any risks of relying on
+                            AI generated output.
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="subsection-block">
+                <div class="subsection-head">
+                    <div>
+                        <p class="subsection-kicker">References</p>
+                        <h3>Sources and Mandatory AI Citation</h3>
+                    </div>
+                    <p>
+                        Keep your paper references, product links, image sources, and AI citation
+                        together in one list.
+                    </p>
+                </div>
+
+                <article class="panel-card">
+                    <ol class="reference-list">
+                        <li><span class="blank-inline">Reference entry 1 to be added</span></li>
+                        <li><span class="blank-inline">Reference entry 2 to be added</span></li>
+                        <li><span class="blank-inline">Reference entry 3 to be added</span></li>
+                        <li><span class="blank-inline">Reference entry 4 to be added</span></li>
+                        <li><span class="blank-inline">Mandatory AI citation to be added</span></li>
+                    </ol>
+                    <p class="repository-note">
+                        Repository reminder: keep your main prompt records in the <code>ai-logs</code>
+                        folder.
+                    </p>
+                </article>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>Suzhou Garden Odyssey · CPT208 Group Project · 2026</p>
+        <p>SuCity-Roam</p>
     </footer>
 </body>
 </html>
