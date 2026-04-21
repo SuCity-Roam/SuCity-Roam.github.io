@@ -3,3 +3,5 @@ require.png
 preview-home.png
 .tmp-edge-profile/
 *.pdf
+!references/
+!references/*.pdf
