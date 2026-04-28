@@ -534,7 +534,8 @@
                     </div>
                     <p>
                         The table below makes the design logic explicit by connecting each user
-                        requirement with a design goal, system feature, and evaluation evidence.
+                        requirement with a design goal, system feature, and research evidence
+                        from academic papers and commercial product analysis.
                     </p>
                 </div>
 
@@ -547,8 +548,8 @@
                                 <tr>
                                     <th scope="col">Requirement</th>
                                     <th scope="col">Design Goal</th>
-                                    <th scope="col">System Feature</th>
-                                    <th scope="col">Evaluation Evidence</th>
+                                    <th scope="col">Prototype / Iteration Feature</th>
+                                    <th scope="col">Research Evidence</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -556,19 +557,19 @@
                                     <th scope="row">R1: Faster cultural destination discovery</th>
                                     <td>Help users decide where to go and understand cultural meaning quickly.</td>
                                     <td>Context-aware AI Guide and cultural attraction information pages.</td>
-                                    <td>User A found static information slow to browse and suggested a direct AI recommendation entry point.</td>
+                                    <td>Paper 3 shows that LLM-based cultural navigation can support accurate interpretation, while the Palace Museum and AMap reviews reveal a gap between cultural content, route planning, and interactive sightseeing Q&amp;A.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">R2: Better spatial understanding before visiting</th>
                                     <td>Help users preview scenic areas and plan routes with more confidence.</td>
                                     <td>Panoramic roaming, route guidance, and destination preview support.</td>
-                                    <td>User B could choose a destination through AI, but still needed panorama to imagine the real garden layout.</td>
+                                    <td>Google Arts &amp; Culture demonstrates the value of panoramic and 3D heritage viewing, but the product review shows that immersive preview is rarely connected back to real-world route planning and on-site visits.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">R3: Social coordination during group travel</th>
-                                    <td>Help friends communicate, share locations, and reconnect safely while travelling.</td>
-                                    <td>Friends, group chat, optional location sharing, and navigate-to-friend support.</td>
-                                    <td>User C liked the friend system, but needed map-based location support after friends separated in a scenic area.</td>
+                                    <td>Help friends communicate first, then reconnect safely when group travelers separate during a visit.</td>
+                                    <td>Alpha prototype: friends and group chat. After Alpha testing: optional location sharing and navigate-to-friend support were added as an iteration.</td>
+                                    <td>Paper 1 highlights that Gen Z outdoor experiences need stronger social interaction, while the AMap and Palace Museum reviews show that group location support and cultural tourism content are usually separated.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -863,8 +864,8 @@
                 <p class="section-kicker">05 / Required Section</p>
                 <h2>Evaluation &amp; Reflection</h2>
                 <p class="section-note">
-                    Document usability testing, iterative refinement, final reflection, and AI
-                    use compliance.
+                    Document the Alpha usability test, participant fit, testing data, iteration
+                    evidence, design implications, final reflection, and AI use compliance.
                 </p>
             </div>
 
@@ -872,23 +873,25 @@
                 <div class="subsection-head">
                     <div>
                         <p class="subsection-kicker">Usability Testing</p>
-                        <h3>Alpha Test With Three Real Users</h3>
+                        <h3>Alpha Usability Testing With Three Real Users</h3>
                     </div>
                     <p>
-                        Three real users tested the Alpha version through short task-based
-                        sessions. The team recorded task time, friction points, preferred
-                        functions, and improvement suggestions.
+                        In this portfolio, Alpha testing means giving the early prototype to
+                        real target users, recording where they struggled, and using the
+                        feedback to improve the design.
                     </p>
                 </div>
 
                 <article class="panel-card testing-method-card">
                     <p class="card-tag">Test Setup</p>
-                    <h3>Method and Tasks</h3>
+                    <h3>Procedure, Tasks, and Recorded Data</h3>
                     <p>
                         Each participant used the Alpha prototype independently while one team
                         member observed and took notes. The session focused on whether users
                         could understand the product purpose, complete core travel tasks, and
-                        identify parts of the interface that felt confusing or useful.
+                        identify parts of the interface that felt confusing or useful. We
+                        recorded participant type, device context, task time, completion status,
+                        key friction, user comments, and improvement suggestions.
                     </p>
                     <ul class="plain-list">
                         <li>Task 1: Find a cultural destination and understand its background information.</li>
@@ -914,99 +917,130 @@
                     </p>
                 </article>
 
+                <article class="panel-card test-data-card">
+                    <p class="card-tag">Testing Data and Target Fit</p>
+                    <h3>Three Real Users Matched to the Target Audience</h3>
+                    <p>
+                        The participants were selected because they matched the intended users:
+                        young students or visitors who may use a mobile cultural tourism
+                        platform while planning or exploring Suzhou. Their age range, travel
+                        identity, familiarity with Suzhou, and task scenario were recorded to
+                        show that the Alpha test involved appropriate target-user demographics.
+                    </p>
+                    <div class="table-wrap">
+                        <table class="portfolio-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Participant</th>
+                                    <th scope="col">Demographic Fit</th>
+                                    <th scope="col">Suzhou Familiarity</th>
+                                    <th scope="col">Device / Context</th>
+                                    <th scope="col">Recorded Data</th>
+                                    <th scope="col">Key Issue Found</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">User A</th>
+                                    <td>Young student visitor; holiday traveler planning a short cultural route.</td>
+                                    <td>Limited familiarity with Suzhou attractions, so he needed quick guidance.</td>
+                                    <td>Mobile browser, first-time login to the Alpha prototype.</td>
+                                    <td>About 2 minutes; partial completion.</td>
+                                    <td>Core AI and friend feature buttons were too small and not discoverable.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">User B</th>
+                                    <td>Young visitor interested in previewing scenic spaces before deciding where to go.</td>
+                                    <td>Had basic awareness of Suzhou gardens, but needed a clearer visual preview.</td>
+                                    <td>Panorama page browsing and roaming interaction task.</td>
+                                    <td>About 1 minute; completed 2 / 3 core tasks.</td>
+                                    <td>Unnecessary interface elements covered the real-view panorama and weakened the viewing experience.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">User C</th>
+                                    <td>Young group traveler; tested the social travel scenario with friends.</td>
+                                    <td>Familiar enough to imagine group travel in Suzhou, but still needed help reconnecting inside scenic areas.</td>
+                                    <td>Friend system and group communication task scenario.</td>
+                                    <td>About 2 minutes; completed 2 / 3 core tasks.</td>
+                                    <td>Group chat helped communication but did not show where friends were.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <div class="subsection-head observation-head">
+                    <div>
+                        <p class="subsection-kicker">Observation Notes</p>
+                        <h3>Detailed Feedback Behind the Test Data</h3>
+                    </div>
+                    <p>
+                        These notes explain what happened during the test and why each issue
+                        mattered for the next design iteration.
+                    </p>
+                </div>
+
                 <div class="three-column-grid testing-grid">
                     <article class="test-record-card">
-                        <p class="card-tag">Participant 1</p>
-                        <h4>User A: Holiday Visitor to Suzhou</h4>
+                        <p class="card-tag">Observation 1</p>
+                        <h4>Mobile Feature Discoverability</h4>
                         <p>
-                            User A is my high school classmate who visited Suzhou during a
-                            holiday. He wanted to quickly find interesting places to visit, so
-                            I invited him to try the unfinished Alpha prototype.
+                            User A opened the Alpha prototype on a mobile browser, but the
+                            function buttons for AI guidance and friends were visually small and
+                            easy to overlook.
                         </p>
-                        <dl class="test-facts">
-                            <div>
-                                <dt>Task Time</dt>
-                                <dd>About 5 minutes</dd>
-                            </div>
-                            <div>
-                                <dt>Completion</dt>
-                                <dd>Partial completion</dd>
-                            </div>
-                        </dl>
                         <ul class="plain-list">
-                            <li>Where he got stuck: the page contained too much static information, so finding an attractive destination took too much time.</li>
-                            <li>Feature he valued most: AI guidance, because it could provide faster and more personalized travel recommendations.</li>
-                            <li>Suggestion: add an AI Guide so visitors can directly ask what to visit in Suzhou instead of browsing every attraction manually.</li>
+                            <li>Observed behavior: he did not discover the AI assistant at first and continued to rely on written recommendations to plan the route.</li>
+                            <li>User feedback: core feature entries should be easier to notice on a phone screen.</li>
+                            <li>Design implication: the mobile navigation hierarchy needed larger, clearer, and more visually prioritized function buttons.</li>
                         </ul>
                     </article>
                     <article class="test-record-card">
-                        <p class="card-tag">Participant 2</p>
-                        <h4>User B: Visitor Who Needed Spatial Preview</h4>
+                        <p class="card-tag">Observation 2</p>
+                        <h4>Panorama Page Visual Clutter</h4>
                         <p>
-                            After AI guidance was added, User B asked the AI where to visit in
-                            Suzhou and was recommended the Humble Administrator's Garden. The
-                            user then opened the related garden page to check the route and
-                            travel suggestions.
+                            User B tested the panoramic roaming page. During roaming, the page
+                            contained too many unnecessary interface elements, which covered part
+                            of the real-view scene.
                         </p>
-                        <dl class="test-facts">
-                            <div>
-                                <dt>Task Time</dt>
-                                <dd>About 3 minutes</dd>
-                            </div>
-                            <div>
-                                <dt>Completion</dt>
-                                <dd>2 / 3 core tasks</dd>
-                            </div>
-                        </dl>
                         <ul class="plain-list">
-                            <li>Where they got stuck: the written route and tips were useful, but the user still could not imagine the real spatial layout of the Humble Administrator's Garden.</li>
-                            <li>Feature they liked most: AI guidance, because it quickly recommended a suitable destination based on the user's travel need.</li>
-                            <li>Suggestion: add panoramic roaming so visitors can preview the garden environment, identify popular spots, and plan a basic route before visiting.</li>
+                            <li>Observed behavior: the user had to look around the interface elements instead of focusing naturally on the scenic panorama.</li>
+                            <li>User feedback: the panorama page should keep only necessary controls and leave more space for the real scene.</li>
+                            <li>Design implication: the panorama interface needed a cleaner layout with reduced overlays and less visual obstruction.</li>
                         </ul>
                     </article>
                     <article class="test-record-card">
-                        <p class="card-tag">Participant 3</p>
-                        <h4>User C: Group Traveler Testing the Friend System</h4>
+                        <p class="card-tag">Observation 3</p>
+                        <h4>Group Travel Coordination Gap</h4>
                         <p>
                             User C tested the friend system from the perspective of travelling
-                            in Suzhou with friends. The Alpha version allowed users to create a
-                            group chat and send messages, but it was still difficult to find
-                            each other after entering a scenic area and exploring separately.
+                            with friends. The chat function supported communication, but it did
+                            not solve the problem of finding friends after separating.
                         </p>
-                        <dl class="test-facts">
-                            <div>
-                                <dt>Task Time</dt>
-                                <dd>About 4 minutes</dd>
-                            </div>
-                            <div>
-                                <dt>Completion</dt>
-                                <dd>2 / 3 core tasks</dd>
-                            </div>
-                        </dl>
                         <ul class="plain-list">
-                            <li>Where they got stuck: group chat helped with communication, but it did not show where friends were after they separated inside a scenic area.</li>
-                            <li>Feature they liked most: the friend system, because it made group travel communication possible.</li>
-                            <li>Suggestion: add optional location sharing and a "navigate to friend" button so users can find friends on the map and walk to them directly.</li>
+                            <li>Observed behavior: group chat was useful, but the user still needed to know where friends were in the scenic area.</li>
+                            <li>User feedback: location sharing and direct navigation to a friend would make group travel smoother.</li>
+                            <li>Design implication: the social feature needed optional location sharing and navigate-to-friend support.</li>
                         </ul>
                     </article>
                 </div>
 
                 <div class="two-column-grid testing-summary-grid">
                     <article class="panel-card accent-card">
-                        <p class="card-tag">Main Findings</p>
+                        <p class="card-tag">Evaluation Results</p>
                         <h3>What the Test Revealed</h3>
                         <ul class="plain-list">
-                            <li>Static information alone made destination discovery slow, so users needed a faster recommendation entry point through AI guidance.</li>
-                            <li>Text-based travel advice helped users choose a place, but panorama was needed to build spatial understanding before arriving.</li>
+                            <li>On mobile, important feature buttons were too small and not discoverable enough, so users could miss the AI assistant and continue using only text recommendations.</li>
+                            <li>The panorama page supported scenic preview, but unnecessary interface elements blocked the real-view scene and reduced immersion.</li>
                             <li>Group chat supported communication, but group travelers also needed location sharing and navigation to reconnect in physical space.</li>
                         </ul>
                     </article>
                     <article class="panel-card">
-                        <p class="card-tag">Design Response</p>
-                        <h3>Changes Planned After Testing</h3>
+                        <p class="card-tag">Design Implications</p>
+                        <h3>How the Results Affected the Next Design</h3>
                         <ul class="plain-list">
-                            <li>Make AI guidance the faster entry point for users who do not know where to go in Suzhou.</li>
-                            <li>Add panoramic roaming to help users preview key scenic spots and plan a rough route before visiting.</li>
+                            <li>Improve the mobile navigation hierarchy by enlarging the AI and friend function buttons and making core feature entries easier to recognize.</li>
+                            <li>Simplify the panoramic roaming page by reducing unnecessary overlays and keeping the real-view scene as the visual focus.</li>
                             <li>Connect the friend system with optional, temporary location sharing and map-based navigation while keeping user control clear.</li>
                         </ul>
                     </article>
@@ -1030,14 +1064,14 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">"It takes too long to decide where to go."</th>
-                                    <td>Destination discovery was slow when users had to browse static content manually.</td>
-                                    <td>Added AI Guide as a faster entry point for personalized cultural recommendations.</td>
+                                    <th scope="row">"I did not notice the AI and friend buttons at first."</th>
+                                    <td>The mobile interface made core feature entries too small and easy to miss.</td>
+                                    <td>Enlarged and emphasized mobile function buttons so users can discover the AI assistant and friend features earlier.</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">"I cannot imagine the real layout of the garden."</th>
-                                    <td>Text and route information were not enough for spatial understanding before arrival.</td>
-                                    <td>Added panoramic roaming so users could preview scenic spaces and plan a rough route.</td>
+                                    <th scope="row">"There are too many things on the panorama page, and they block the real scene."</th>
+                                    <td>The panorama page had unnecessary interface elements that reduced visibility and weakened the immersive viewing experience.</td>
+                                    <td>Reduced visual clutter on the panorama page and kept only necessary controls over the real-view scene.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">"Chat is useful, but I still cannot find my friends."</th>
@@ -1050,29 +1084,125 @@
                 </article>
             </div>
 
-            <div class="two-column-grid">
-                <article class="panel-card">
-                    <p class="card-tag">Iterative Refinement</p>
-                    <h3>Version 3.0 Improvements</h3>
-                    <div class="comparison-grid">
-                        <div class="placeholder-frame">
-                            <span>Before screenshot</span>
-                        </div>
-                        <div class="placeholder-frame">
-                            <span>After screenshot</span>
-                        </div>
+            <div class="subsection-block">
+                <div class="subsection-head">
+                    <div>
+                        <p class="subsection-kicker">Before and After</p>
+                        <h3>Interface Changes Based on Alpha Feedback</h3>
                     </div>
+                    <p>
+                        This comparison makes the iterative refinement visible by showing what
+                        changed after the Alpha usability test.
+                    </p>
+                </div>
+
+                <article class="panel-card before-after-card">
+                    <p class="card-tag">Iterative Refinement</p>
+                    <h3>Before and After Interface Comparison</h3>
+
+                    <div class="iteration-gallery">
+                        <section class="iteration-case">
+                            <div class="iteration-case-head">
+                                <p class="card-tag">User A Iteration</p>
+                                <h4>Mobile Feature Discoverability</h4>
+                            </div>
+                            <div class="comparison-grid iteration-shot-grid">
+                                <figure class="iteration-shot">
+                                    <img class="iteration-image" src="images/iteration/user-a-before.png" width="548" height="1143" loading="lazy" alt="Before iteration screenshot showing small mobile feature buttons.">
+                                    <figcaption>Before: AI and friend entries were small and easy to miss.</figcaption>
+                                </figure>
+                                <figure class="iteration-shot">
+                                    <img class="iteration-image" src="images/iteration/user-a-after.png" width="509" height="1114" loading="lazy" alt="After iteration screenshot showing clearer mobile feature buttons.">
+                                    <figcaption>After: core function entries are more visible on mobile.</figcaption>
+                                </figure>
+                            </div>
+                        </section>
+
+                        <section class="iteration-case">
+                            <div class="iteration-case-head">
+                                <p class="card-tag">User B Iteration</p>
+                                <h4>Panorama Page Readability</h4>
+                            </div>
+                            <div class="iteration-shot-group">
+                                <p class="iteration-subtitle">Mobile Panorama View</p>
+                                <div class="comparison-grid iteration-shot-grid">
+                                    <figure class="iteration-shot">
+                                        <img class="iteration-image" src="images/iteration/user-b-before-mobile.png" width="540" height="1123" loading="lazy" alt="Before iteration mobile panorama page with visual clutter.">
+                                        <figcaption>Before: interface elements covered too much of the real scene.</figcaption>
+                                    </figure>
+                                    <figure class="iteration-shot">
+                                        <img class="iteration-image" src="images/iteration/user-b-after-mobile.png" width="529" height="1120" loading="lazy" alt="After iteration mobile panorama page with fewer blocking elements.">
+                                        <figcaption>After: unnecessary overlays were reduced.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="iteration-shot-group">
+                                <p class="iteration-subtitle">Wide Panorama View</p>
+                                <div class="comparison-grid iteration-shot-grid">
+                                    <figure class="iteration-shot">
+                                        <img class="iteration-image iteration-image-wide" src="images/iteration/user-b-before-wide.png" width="2547" height="1117" loading="lazy" alt="Before iteration wide panorama page with crowded interface elements.">
+                                        <figcaption>Before: the panorama view competed with extra page elements.</figcaption>
+                                    </figure>
+                                    <figure class="iteration-shot">
+                                        <img class="iteration-image iteration-image-wide" src="images/iteration/user-b-after-wide.png" width="2559" height="1226" loading="lazy" alt="After iteration wide panorama page with cleaner real-view focus.">
+                                        <figcaption>After: the real-view scene becomes the visual focus.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="iteration-case">
+                            <div class="iteration-case-head">
+                                <p class="card-tag">User C Iteration</p>
+                                <h4>Friend Location and Reconnection</h4>
+                            </div>
+                            <div class="iteration-shot-group">
+                                <p class="iteration-subtitle">Before: Group Chat Only</p>
+                                <div class="three-column-grid iteration-shot-grid">
+                                    <figure class="iteration-shot">
+                                        <img class="iteration-image" src="images/iteration/user-c-before.png" width="725" height="1052" loading="lazy" alt="Before iteration friend system screenshot with communication-focused interface.">
+                                        <figcaption>Before: the friend page supported social communication, but location was not clear.</figcaption>
+                                    </figure>
+                                    <figure class="iteration-shot">
+                                        <img class="iteration-image" src="images/iteration/user-c-before-chat-list.png" width="590" height="1207" loading="lazy" alt="Before iteration group chat list screenshot.">
+                                        <figcaption>Before: users could enter group chat, but this did not help them find each other physically.</figcaption>
+                                    </figure>
+                                    <figure class="iteration-shot">
+                                        <img class="iteration-image" src="images/iteration/user-c-before-chat-detail.png" width="465" height="639" loading="lazy" alt="Before iteration group chat detail screenshot.">
+                                        <figcaption>Before: conversation supported coordination, but not map-based reconnection.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="iteration-shot-group">
+                                <p class="iteration-subtitle">After: Location Sharing and Reconnection</p>
+                                <div class="comparison-grid iteration-shot-grid">
+                                    <figure class="iteration-shot">
+                                        <img class="iteration-image" src="images/iteration/user-c-after-location.png" width="740" height="1014" loading="lazy" alt="After iteration screenshot showing friend location support.">
+                                        <figcaption>After: optional friend location support was added.</figcaption>
+                                    </figure>
+                                    <figure class="iteration-shot">
+                                        <img class="iteration-image" src="images/iteration/user-c-after-navigation.png" width="584" height="1252" loading="lazy" alt="After iteration screenshot showing navigate-to-friend support.">
+                                        <figcaption>After: users can reconnect through friend navigation.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
                     <p class="placeholder-caption">
-                        Suggested comparison focus: static content layout versus the integrated
-                        version with panorama, AI support, and route coordination.
+                        The screenshots above show how Alpha feedback was translated into
+                        concrete interface changes for mobile feature discovery, panorama
+                        readability, and friend reconnection.
                     </p>
                     <ul class="plain-list version-list">
-                        <li>Architectural optimization: introduced deep panoramic tour support, optimized interaction feedback, and improved transitions between interfaces.</li>
-                        <li>Wider functional support: merged multilingual support, LLM-based tour guidance, route planning, and friend position sharing.</li>
-                        <li>Paradigm evolution: moved beyond isolated static content toward a more integrated digital cultural tourism experience.</li>
+                        <li>Mobile discoverability: enlarged and emphasized the AI and friend function entries so first-time users can find core tools faster.</li>
+                        <li>Panorama readability: reduced unnecessary overlays so the real-view scene stays central during roaming.</li>
+                        <li>Group coordination: connected the friend system with optional location sharing and navigate-to-friend support.</li>
                     </ul>
                 </article>
+            </div>
 
+            <div class="subsection-block">
                 <article class="panel-card">
                     <p class="card-tag">Final Reflection</p>
                     <h3>Social and Ethical Impact</h3>
