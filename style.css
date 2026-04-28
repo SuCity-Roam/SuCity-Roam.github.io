@@ -973,6 +973,15 @@ img {
     text-underline-offset: 0.15em;
 }
 
+.inline-link {
+    color: var(--moss);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+    overflow-wrap: anywhere;
+}
+
 .reference-sep {
     margin: 0 0.32rem;
     color: var(--muted);

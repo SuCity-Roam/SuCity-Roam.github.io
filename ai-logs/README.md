@@ -1,15 +1,10 @@
-# AI Logs Placeholder
+# AI Assistance Logs
 
-Store the main prompts and short notes for any AI-assisted code or content work here.
+This folder records the main AI-assisted prompts and verification notes used while preparing the process portfolio webpage.
 
-Suggested files:
+AI was used as a support tool for frontend portfolio structure, wording, HTML/CSS layout refinement, and coursework requirement checking. Final design decisions, user-testing interpretation, and submitted content were reviewed and adjusted by the project team.
 
-- `prompt-log-01.md`
-- `prompt-log-02.md`
-- `validation-notes.md`
+Log files:
 
-Each log can include:
-
-- the prompt used
-- what part of the project it affected
-- how the team checked or revised the output
+- `prompt-log-01.md`: main prompts and affected portfolio components.
+- `validation-notes.md`: how the team checked AI-assisted output.

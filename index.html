@@ -534,8 +534,8 @@
                     </div>
                     <p>
                         The table below makes the design logic explicit by connecting each user
-                        requirement with a design goal, system feature, and research evidence
-                        from academic papers and commercial product analysis.
+                        requirement with a design goal, prototype feature, research evidence,
+                        and Alpha testing evidence.
                     </p>
                 </div>
 
@@ -550,6 +550,7 @@
                                     <th scope="col">Design Goal</th>
                                     <th scope="col">Prototype / Iteration Feature</th>
                                     <th scope="col">Research Evidence</th>
+                                    <th scope="col">Evaluation / Iteration Evidence</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -558,18 +559,21 @@
                                     <td>Help users decide where to go and understand cultural meaning quickly.</td>
                                     <td>Context-aware AI Guide and cultural attraction information pages.</td>
                                     <td>Paper 3 shows that LLM-based cultural navigation can support accurate interpretation, while the Palace Museum and AMap reviews reveal a gap between cultural content, route planning, and interactive sightseeing Q&amp;A.</td>
+                                    <td>User A missed the AI entry on mobile because key function buttons were too small. The iteration enlarged and emphasized AI and friend function entries to improve discoverability.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">R2: Better spatial understanding before visiting</th>
                                     <td>Help users preview scenic areas and plan routes with more confidence.</td>
                                     <td>Panoramic roaming, route guidance, and destination preview support.</td>
                                     <td>Google Arts &amp; Culture demonstrates the value of panoramic and 3D heritage viewing, but the product review shows that immersive preview is rarely connected back to real-world route planning and on-site visits.</td>
+                                    <td>User B found that unnecessary interface elements blocked the real-view panorama. The iteration reduced visual clutter so the scenic view stayed central during roaming.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">R3: Social coordination during group travel</th>
                                     <td>Help friends communicate first, then reconnect safely when group travelers separate during a visit.</td>
                                     <td>Alpha prototype: friends and group chat. After Alpha testing: optional location sharing and navigate-to-friend support were added as an iteration.</td>
                                     <td>Paper 1 highlights that Gen Z outdoor experiences need stronger social interaction, while the AMap and Palace Museum reviews show that group location support and cultural tourism content are usually separated.</td>
+                                    <td>User C found that group chat supported communication but did not help users locate friends. The iteration added optional location sharing and navigate-to-friend support.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -729,7 +733,11 @@
                     <h3>Runnable Web App Link</h3>
                     <div class="callout-card">
                         <p class="callout-label">Deployment URL</p>
-                        <p class="placeholder-text">Add your online prototype link here.</p>
+                        <p>
+                            <a class="inline-link" href="https://cpt-208-group-work.vercel.app/" target="_blank" rel="noopener">
+                                https://cpt-208-group-work.vercel.app/
+                            </a>
+                        </p>
                     </div>
                     <div class="callout-card">
                         <p class="callout-label">Current Integrated Direction</p>
@@ -767,27 +775,27 @@
                         <tbody>
                             <tr>
                                 <th><a href="member-1.html">Jinyu Cai</a></th>
-                                <td><span class="blank-inline">To be added</span></td>
-                                <td><span class="blank-inline">To be added</span></td>
-                                <td><span class="blank-inline">To be added</span></td>
+                                <td>AI guide feature development, AMap API integration for friend location sharing, garden navigation support, and early portfolio research organization.</td>
+                                <td>AI guide module for the project website; AMap-based location sharing support for the friend system; garden page route navigation feature; early user requirement research; questionnaire release and response collection; project development timeline; iterative process documentation; Design Alternatives section.</td>
+                                <td>AI guide interface, AMap location-sharing and garden navigation pages, questionnaire records, early requirement research materials, project timeline, Iterative Refinement section, and Design Alternatives section.</td>
                             </tr>
                             <tr>
                                 <th><a href="member-2.html">Chao Sheng</a></th>
-                                <td><span class="blank-inline">To be added</span></td>
-                                <td><span class="blank-inline">To be added</span></td>
-                                <td><span class="blank-inline">To be added</span></td>
+                                <td>Image upload and favorites feature development for the project website, plus motivation, system architecture, and final reflection work for the portfolio.</td>
+                                <td>Image upload function; favorites/collection function; 200-word project motivation statement; system architecture diagram and explanation; final social, ethical, and AI-use reflection.</td>
+                                <td>Upload image feature, Favorites page/function, Motivation &amp; Research section, System Architecture section, and Final Reflection section.</td>
                             </tr>
                             <tr>
                                 <th><a href="member-3.html">Mingze Sun</a></th>
-                                <td><span class="blank-inline">To be added</span></td>
-                                <td><span class="blank-inline">To be added</span></td>
-                                <td><span class="blank-inline">To be added</span></td>
+                                <td>Project UI design, early ideation sketching, static website content writing, and portfolio image asset preparation.</td>
+                                <td>Overall UI design for the project website; all early hand-drawn UI sketches; static text content used in the project website; image collection, selection, and placement support for the portfolio website.</td>
+                                <td>Crazy Eights sketch photos, Design Alternatives section, project website interface pages, static content sections, and portfolio image materials.</td>
                             </tr>
                             <tr>
                                 <th><a href="member-4.html">Zihao Gong</a></th>
-                                <td><span class="blank-inline">To be added</span></td>
-                                <td><span class="blank-inline">To be added</span></td>
-                                <td><span class="blank-inline">To be added</span></td>
+                                <td>User requirements, friend system development, virtual real-scene design, portfolio framework setup, research collection, and Alpha testing organization.</td>
+                                <td>User requirements section, journey map and R1/R2/R3 requirement mapping; friend and group travel feature support; virtual scene design for immersive scenic views; base portfolio webpage structure and code; collected academic research and commercial product examples; organized Alpha test findings and before-after improvement screenshots.</td>
+                                <td>User Requirements section, User Journey Map, R1/R2/R3 mapping table, friend system prototype, panoramic/virtual scene pages, portfolio HTML structure, Research and Commercial Product Review section, Alpha usability testing table, and iteration screenshots.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1233,7 +1241,9 @@
                         organization, and some interaction concepts, which accelerated frontend
                         prototyping and interface integration. However, the final design decisions
                         and feature adjustments were still made by the project team, so AI mainly
-                        acted as a support tool for frontend design.
+                        acted as a support tool for frontend design. The detailed prompts,
+                        validation checks, and ethical considerations behind this use are
+                        documented in the Required AI Use Disclosure below.
                     </p>
                 </article>
             </div>
@@ -1245,8 +1255,10 @@
                         <h3>Required AI Use Disclosure</h3>
                     </div>
                     <p>
-                        This section was added to match the coursework requirement about AI
-                        assisted work.
+                        This section expands on the AI use summarized in the final reflection:
+                        AI supported frontend design, wording, module organization, and
+                        interaction planning, while the team remained responsible for final
+                        decisions and evidence.
                     </p>
                 </div>
 
@@ -1255,38 +1267,57 @@
                         <p class="card-tag">Current AI Use Note</p>
                         <h3>Existing Disclosure</h3>
                         <p>
-                            This website was built with the assistance of ChatGPT for webpage
-                            content, persona drafting, and front-end code structure. AI was used
-                            as a support tool during design and implementation rather than a
-                            replacement for human judgement.
+                            ChatGPT was used as a support tool during the portfolio and frontend
+                            design process. It helped generate layout ideas, interface text,
+                            module organization, and interaction concepts. These outputs were
+                            treated as draft material and were revised by the team before being
+                            included in the final website.
                         </p>
                     </article>
 
                     <article class="panel-card">
                         <p class="card-tag">Prompt Record</p>
                         <h3>Main Prompts Used for Core Components</h3>
-                        <p class="placeholder-text">
-                            Add the prompts used to generate or refine major interface and code
-                            components.
-                        </p>
+                        <ul class="plain-list">
+                            <li>Help generate a clear frontend portfolio layout based on the CPT208 required sections and our project materials.</li>
+                            <li>Help organize the website modules so motivation, research, requirements, ideation, implementation, evaluation, and reflection appear in a logical order.</li>
+                            <li>Help polish interface text and section wording while keeping the team's real project evidence unchanged.</li>
+                            <li>Help suggest interaction and presentation ideas for tables, requirement mapping, contribution records, and evidence screenshots.</li>
+                            <li>Help refine the R1/R2/R3 mapping so design goals, prototype features, research evidence, and Alpha testing evidence are easier to compare.</li>
+                            <li>Help adjust the HTML/CSS layout for before-after screenshots so the iteration evidence is readable on the webpage.</li>
+                        </ul>
                     </article>
 
                     <article class="panel-card">
                         <p class="card-tag">Validation</p>
                         <h3>How the Team Checked AI Output</h3>
-                        <p class="placeholder-text">
-                            Explain how the team verified that AI generated content and code
-                            matched user requirements and project goals.
-                        </p>
+                        <ul class="plain-list">
+                            <li>The team compared AI-assisted layout and module suggestions with the coursework checklist to ensure required sections were present.</li>
+                            <li>Generated interface text was revised to match the actual SuCity-Roam process rather than generic tourism wording.</li>
+                            <li>R1/R2/R3, Alpha testing findings, and iteration decisions were manually checked against the final prototype features.</li>
+                            <li>Image paths, local assets, screenshots, and page structure were checked after frontend edits so the evidence loaded correctly.</li>
+                        </ul>
                     </article>
 
                     <article class="panel-card">
                         <p class="card-tag">Ethical Considerations</p>
                         <h3>Bias, Accessibility, and Responsible Use</h3>
-                        <p class="placeholder-text">
-                            Discuss accessibility, bias, authorship, and any risks of relying on
-                            AI generated output.
-                        </p>
+                        <ul class="plain-list">
+                            <li>AI output was treated as draft frontend support, not as final evidence. The team avoided inventing user data and kept feedback anonymous.</li>
+                            <li>Because AI can produce generic or biased descriptions, the team revised wording to reflect Suzhou cultural tourism and the actual prototype features.</li>
+                            <li>Accessibility was considered during frontend organization by using readable headings, visible links, and descriptive alt text for images.</li>
+                            <li>Final layout decisions, feature priorities, and evaluation interpretations were made by the project team rather than delegated to AI.</li>
+                        </ul>
+                    </article>
+
+                    <article class="panel-card">
+                        <p class="card-tag">Vibe Coding Reflection</p>
+                        <h3>What Worked and What Did Not</h3>
+                        <ul class="plain-list">
+                            <li>What worked: AI helped generate layout ideas, polish interface text, organize modules, and speed up frontend prototyping.</li>
+                            <li>What did not work: some AI drafts were too general, missed project-specific evidence, or needed correction when the real testing process changed.</li>
+                            <li>Team response: the team reviewed each AI-assisted section, replaced placeholders with real evidence, and made the final design and feature adjustments ourselves.</li>
+                        </ul>
                     </article>
                 </div>
             </div>
