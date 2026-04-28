@@ -451,7 +451,8 @@ img {
 }
 
 .sketch-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
 }
 
 .panel-card,
@@ -560,6 +561,76 @@ img {
     font-size: 0.92rem;
 }
 
+.testing-method-card {
+    margin-bottom: 1.3rem;
+}
+
+.testing-method-card .plain-list {
+    margin-top: 1rem;
+}
+
+.consent-card,
+.feedback-change-card {
+    margin-top: 1.2rem;
+}
+
+.consent-card {
+    margin-bottom: 1.3rem;
+}
+
+.mapping-table-card .table-wrap,
+.feedback-change-card .table-wrap {
+    margin-top: 1rem;
+}
+
+.test-record-card {
+    min-height: 100%;
+    padding: 1.35rem;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.18)),
+        rgba(246, 240, 226, 0.72);
+    box-shadow: var(--shadow-soft);
+}
+
+.test-record-card h4 {
+    margin: 0 0 0.9rem;
+    font-size: 1.2rem;
+}
+
+.test-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+    margin: 0 0 1rem;
+}
+
+.test-facts div {
+    padding: 0.75rem;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: rgba(255, 253, 248, 0.56);
+}
+
+.test-facts dt {
+    margin: 0 0 0.25rem;
+    color: var(--moss);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.test-facts dd {
+    margin: 0;
+    font-weight: 700;
+}
+
+.testing-summary-grid {
+    margin-top: 1.3rem;
+}
+
 .placeholder-frame {
     display: grid;
     place-items: center;
@@ -607,6 +678,35 @@ img {
     border-radius: 24px;
     background: rgba(255, 253, 248, 0.48);
     color: var(--muted);
+    text-align: center;
+}
+
+.sketch-card {
+    margin: 0;
+    padding: 0.75rem;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.18)),
+        rgba(246, 240, 226, 0.6);
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+}
+
+.sketch-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    background: #f8f3e7;
+}
+
+.sketch-card figcaption {
+    margin-top: 0.65rem;
+    color: var(--moss);
+    font-size: 0.94rem;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -862,7 +962,7 @@ img {
     }
 
     .sketch-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .subsection-head {
